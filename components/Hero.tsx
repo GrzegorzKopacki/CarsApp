@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CustomButton } from "./CustomButton";
 
 export function Hero() {
 	return (
@@ -11,6 +12,7 @@ export function Hero() {
 					Streamline your car rental experience with our effortles booking
 					process.
 				</p>
+				<CustomButton />
 			</div>
 		</div>
 	);
