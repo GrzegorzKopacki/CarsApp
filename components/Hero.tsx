@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { CustomButton } from "./CustomButton";
 
 export function Hero() {
+	const handleScroll = () => {};
 	return (
 		<div className="flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto">
 			<div className="flex-1 pt-36 padding-x">
@@ -12,7 +15,11 @@ export function Hero() {
 					Streamline your car rental experience with our effortles booking
 					process.
 				</p>
-				<CustomButton />
+				<CustomButton
+					title="Explore Cars"
+					containerStyles="bg-primary-blue text-white rounded-full mt-10"
+					handleClick={handleScroll}
+				/>
 			</div>
 		</div>
 	);
