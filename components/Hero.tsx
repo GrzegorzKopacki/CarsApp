@@ -21,6 +21,11 @@ export function Hero() {
 					handleClick={handleScroll}
 				/>
 			</div>
+			<div className="hero__image-container">
+				<div className="hero__image">s
+					<Image src="" alt=""/>
+				</div>
+			</div>
 		</div>
 	);
 }
