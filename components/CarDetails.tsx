@@ -3,7 +3,12 @@
 import { CarProps } from "@/types";
 import Image from "next/image";
 import { Fragment } from "react";
-import { Dialog, DialogPanel, Transition, TransitionChild } from "@headlessui/react";
+import {
+	Dialog,
+	DialogPanel,
+	Transition,
+	TransitionChild,
+} from "@headlessui/react";
 
 interface CarDetailsProps {
 	isOpen: boolean;
@@ -38,10 +43,18 @@ export function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
 								leaveFrom="opacity-100 scale-100"
 								leaveTo="opacity-0 scale-95"
 							>
-                                <DialogPanel>
-                                    <button></button>
-                                </DialogPanel>
-                            </TransitionChild>
+								<DialogPanel>
+									<button type="button" onClick={closeModal}>
+										<Image
+											src="/close.svg"
+											alt="close"
+											width={20}
+											height={20}
+											className="object-contain"
+										/>
+									</button>
+								</DialogPanel>
+							</TransitionChild>
 						</div>
 					</div>
 				</Dialog>
